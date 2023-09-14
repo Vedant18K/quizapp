@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+</head>
+<script>
+    function answer(num){
+        if (num==1 || num==4 || num==7 || num==12){
+            window.alert("it is correct answer ");
+        }else{
+            window.alert("Wrong Answer");
+        }
+    }
+    
+</script>
+<body>
+    <div style="justify-content: center; margin-left: 30%; margin-top: 10%;">
+        <h1 >Quiz App</h1>
+        <form>
+            <div style="margin-top: 10px;">
+                <lable>1. Addition of 2 + 2 = ____</lable><br>
+                <input type="radio" name="question1" value="4" id="1" onclick=answer(1)>4</input>
+                <input type="radio" name="question1" value="5" id="2" onclick=answer(2)>5</input>
+                <input type="radio" name="question1" value="6" id="3" onclick=answer(3)>6</input>
+            </div>
+            <div style="margin-top: 10px;">
+                <lable>2. Which one is the smallest ocean in the World?</lable><br>
+                <input type="radio" name="question2" value="Arctic" id="4" onclick=answer(4)> Arctic</input>
+                <input type="radio" name="question2" value="Pacific" id="5" onclick=answer(5)>Pacific</input>
+                <input type="radio" name="question2" value="Atlantic" id="6" onclick=answer(6)>Atlantic</input>
+            </div>
+            <div style="margin-top: 10px;">
+                <lable>3. How many Kingdom in Game of Throne</lable><br>
+                <input type="radio" name="question3" value="7" id="7" onclick=answer(7)>7</input>
+                <input type="radio" name="question3" value="10" id="8" onclick=answer(8)>10</input>
+                <input type="radio" name="question3" value="5" id="9" onclick=answer(9)>5</input>
+            </div>
+            <div style="margin-top: 10px;">
+                <lable>4. SRK latest Movie Name</lable><br>
+                <input type="radio" name="question4" value="Jailer" id="10" onclick=answer(10)>Jailer</input>
+                <input type="radio" name="question4" value="Pathan" id="11" onclick=answer(11)>Pathan</input>
+                <input type="radio" name="question4" value="Jawan" id="12" onclick=answer(12)>Jawan</input>
+            </div>
+            <button type="submit" >Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
+
+
